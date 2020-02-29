@@ -19,7 +19,15 @@ $("[data-toggle=sidebar-collapse]").click(function() {
 function SidebarCollapse() {
   $(".menu-collapsed").toggleClass("d-none");
   $("#sidebar-container").toggleClass("sidebar-expanded sidebar-collapsed");
-
+  $(".main-content")
+    .parent()
+    .toggleClass("col-md-10");
+  $(".main-content")
+    .parent()
+    .toggleClass("col-md-12");
+  $(".main-content")
+    .parent()
+    .toggleClass("offset-md-2");
   // Treating d-flex/d-none on separators with title
   var SeparatorTitle = $(".sidebar-separator-title");
   var HeaderText = $(".toggle");
@@ -48,4 +56,47 @@ function SidebarCollapse() {
   $("#collapse-icon").toggleClass("fa-angle-double-left fa-angle-double-right");
 }
 
-//
+//ADD INGREDIENTS PAGE
+
+$(".ingredient-inner").mouseover(function() {
+  $(this).find(".ingredient-check");
+  $(this)
+    .find("img")
+    .css("opacity", "1");
+});
+
+$(".ingredient-inner").mouseout(function() {
+  $(this).find(".ingredient-check");
+  $(this)
+    .find("img")
+    .css("opacity", ".6");
+});
+
+$(".ingredient-inner .ingredient-check").on("click", function() {
+  if (!$(this).hasClass("selected")) {
+    $(this).addClass("selected");
+  } else {
+    $(this).removeClass("selected");
+  }
+});
+
+// COUNTER
+
+$(document).ready(function() {
+  $(".count").prop("disabled", true);
+  $(document).on("click", ".plus", function() {
+    $(".count").val(parseInt($(".count").val()) + 1);
+  });
+  $(document).on("click", ".minus", function() {
+    $(".count").val(parseInt($(".count").val()) - 1);
+    if ($(".count").val() == 0) {
+      $(".count").val(1);
+    }
+  });
+});
+
+// MODAL
+
+$(".button-after-inline-edit").on("click", function() {
+  $.fancybox.close();
+});
