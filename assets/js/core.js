@@ -13,7 +13,6 @@ $("#collapse-icon").addClass("fa-angle-double-left");
 
 // Collapse click
 $("[data-toggle=sidebar-collapse]").click(function() {
-  console.log('clicked')
   SidebarCollapse();
 });
 
@@ -101,3 +100,4 @@ $(document).ready(function() {
 $(".button-after-inline-edit").on("click", function() {
   $.fancybox.close();
 });
+

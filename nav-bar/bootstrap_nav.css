@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   background-color: #ccc;
   color: #fff;
 }
 p {
   color: #fff;
-  font-size: 0.9em;
+  font-size: .9em;
   padding-left: 10px;
   padding-top: 10px;
 }
@@ -32,8 +32,8 @@ h3.nav-link {
 }
 .nav-item p {
   color: #fff;
-  font-size: 0.9em;
-  font-family: "Muli";
+  font-size: .9em;
+  font-family: 'Muli', ;
 }
 .nav-item a {
   color: #fff;
@@ -65,15 +65,16 @@ h3.nav-link {
   display: inline-block;
 }
 
+
 #body-row {
-  margin-left: 0;
-  margin-right: 0;
+    margin-left:0;
+    margin-right:0;
 }
 #sidebar-container {
-  min-height: 100vh;
-  background-color: #a0d468;
-  padding: 0;
-  position: relative;
+    min-height: 100vh;   
+    background-color: #a0d468;
+    padding: 0;
+    position: relative;
 }
 
 #sidebar-container .list-group a {
@@ -86,21 +87,22 @@ a.list-group-item.list-group-item-action {
   padding-left: 20px;
 }
 
+
 /* Sidebar sizes when expanded and expanded */
 .sidebar-expanded {
-  width: 100%;
+    width: 230px;
 }
 .sidebar-collapsed {
-  width: 60px;
+    width: 60px;
 }
 
 /* Submenu item*/
 #sidebar-container .list-group .sidebar-submenu a {
-  height: 45px;
-  padding-left: 30px;
+    height: 45px;
+    padding-left: 30px;
 }
 .sidebar-submenu {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 #dashboard {
@@ -109,6 +111,7 @@ a.list-group-item.list-group-item-action {
 #my-acct {
   margin-top: 140px;
 }
+
 
 /* nav footer */
 div#nav-add {
@@ -128,32 +131,4 @@ li.nav-item #nav-add-a .desc {
 li.nav-item img {
   width: 30px;
   margin-right: 10%;
-}
-
-.container-fluid,
-.col-md-2,
-.col-md-10 {
-  padding: 0px !important;
-}
-
-.container-fluid,
-.col-md-2,
-.col-md-10,
-.hidePadding {
-  padding: 0px !important;
-}
-
-.row {
-  margin: 0px !important;
-}
-
-.main-content {
-  padding: 5%;
-  background: #f5f5f5;
-  min-height: 100vh;
-}
-
-.sidebar-outer {
-  position: absolute !important;
-  z-index: 99;
 }
