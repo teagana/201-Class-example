@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <link rel="stylesheet" href="../assets/css/bootstrap_nav.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
         <script src="https://kit.fontawesome.com/cddc03767c.js" crossorigin="anonymous"></script>
 
         <!-- sign up modal style sheet -->
-        <link rel="stylesheet" href="sign_up.css">
+        <link rel="stylesheet" href="assets/css/sign_up.css">
         
         <title>Account Page</title>
 
@@ -198,7 +197,7 @@
                     <div id="nav-header">
                       <li class="nav-item toggle">
                         <h3 class="nav-link" href="#">
-                          <img id="nav-logo" src="img/logo-apple.png" alt="Wasted logo" />
+                          <img id="nav-logo" src="assets/img/logo-apple.png" alt="Wasted logo" />
                           <span id="wasted" class="desc">Wasted</span>
                         </h3>
                         <p>Hey Sara!</p>
@@ -327,7 +326,7 @@
                     <div id="nav-add">
                       <li class="nav-item" id="nav-add-li">
                         <a id="nav-add-a" class="nav-link" href="#">
-                          <img src="img/add.png" alt="Add ingredients" />
+                          <img src="assets/img/add.png" alt="Add ingredients" />
                           <span class="desc toggle">Add Ingredient</span>
                         </a>
                       </li>
@@ -341,46 +340,50 @@
               </div>
       
               <!-- MAIN CONTENT FOR EACH PAGE -->
+      
+      
 
-              <div class="col-md-10">
-                <div class="main-content">
-                    <h3>My Account</h3>
+            
 
-                    <!-- <div id="id02" class="modal"> -->
-                        <!-- <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal"></span> -->
-                        <!-- <form class="modal-content" action="/action_page.php"> -->
-                          <div class="container">
-                            <!-- <p>Please fill in this form to create an account.</p> -->
-                            <hr>
-                            <label for="name"><b>First Name</b></label>
-                            <input type="text" placeholder="First Name" name="name" required>
+            <div class="col-md-10 offset-md-2 hidePadding">
+              <div class="main-content">
+                  <h3>My Account</h3>
 
-                            <label for="name"><b>Last Name</b></label>
-                            <input type="text" placeholder="Last Name" name="name" required>
+                  <!-- <div id="id02" class="modal"> -->
+                      <!-- <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal"></span> -->
+                      <!-- <form class="modal-content" action="/action_page.php"> -->
+                        <div class="container">
+                          <!-- <p>Please fill in this form to create an account.</p> -->
+                          <hr>
+                          <label for="name"><b>First Name</b></label>
+                          <input type="text" placeholder="First Name" name="name" required>
 
-                            <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Email" name="email" required>
-                      
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Password" name="psw" required>
+                          <label for="name"><b>Last Name</b></label>
+                          <input type="text" placeholder="Last Name" name="name" required>
 
-                      
-                      
-                            <div class="clearfix">
-                              <button>Edit</button>
-                              <button>Save</button>
-                            </div>
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Email" name="email" required>
+                    
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Password" name="psw" required>
+
+                    
+                    
+                          <div class="clearfix">
+                            <button>Edit</button>
+                            <button>Save</button>
                           </div>
-                        </form>
-                      </div>
+                        </div>
+                      </form>
+                    </div>
 
-                </div>
               </div>
-
             </div>
+            </div>
+
           </div>
 
         <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>    
-        <script src="assets/js/core.js"></script>
+        <script src="../assets/js/core.js"></script>
     </body>
 </html>
