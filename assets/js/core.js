@@ -13,7 +13,6 @@ $("#collapse-icon").addClass("fa-angle-double-left");
 
 // Collapse click
 $("[data-toggle=sidebar-collapse]").click(function() {
-  console.log('clicked')
   SidebarCollapse();
 });
 
