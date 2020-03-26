@@ -2,6 +2,11 @@
 
 /* GENERAL STYLING */
 
+.bo{
+ color: white;
+ font-size: 28px
+}
+
 .btn-primary {
   background-color: #a0d468;
   border: none;
