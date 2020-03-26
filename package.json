@@ -1,0 +1,10 @@
+{
+    "name": "ITPWebDev",
+    "version": "1.0.0",
+    "description": "ITP460 Lecture 12 Example",
+    "devDependencies": {
+        "grunt": "^1.1.0",
+        "grunt-contrib-cssmin": "^3.0.0",
+        "grunt-contrib-uglify": "^4.0.1"
+    }
+}
