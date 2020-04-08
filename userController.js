@@ -2,17 +2,13 @@ var User = require('../../models/users');
 var Helper = require('../../helper');
 var Promise = require('bluebird')
 var _ = require('lodash')
-
-var mongoose = require('mongoose');
-const Mixpanel = require('mixpanel');
-const mixpanel = Mixpanel.init(process.env.MIXPANEL_TOKEN);
 const express = require('express')
 const router = express.Router()
 
 
 /*
   "/v2/signin"
-  POST: Api to sign in from app
+  POST: Api call to sign in from the app
 */
 router.post('/signin', (req, res) => {
   var email = req.body.email;
